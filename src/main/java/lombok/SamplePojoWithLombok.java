@@ -4,8 +4,8 @@ package lombok;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-@ToString
-@EqualsAndHashCode
+@ToString(exclude = {"id"})
+@EqualsAndHashCode(of = {"id"})
 public class SamplePojoWithLombok {
 	String name;
 	int id;
